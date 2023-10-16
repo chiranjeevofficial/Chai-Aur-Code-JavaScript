@@ -60,3 +60,71 @@ Output
 | 2 | 'Hello@123' |
 | 3 | 'Rishikesh' | 
 | 4 | undefined |
+
+### DataType Conversion
+
+ - **Number.isInteger():** its take a value as a argument and return boolean true or false repectively, value is Number or NotANumber.
+
+ - **Number.isSafeInteger():** its work same as Number.isInteger() method, but its have predefined range (2^53 - 1) to (2^53 - 1);
+
+### Value to Integer Conversion
+
+- Before Conversion
+
+| Value | Type | Integer |
+| --- | --- | --- |
+| "" | string | false |
+| "5" | string | false |
+| "5ab" | string | false |
+| NaN | number | false |
+| null | object | false |
+| undefined | undefined | false |
+| true | boolean | false |
+| false | boolean | false |
+
+ - After Conversion
+
+| Value | Type | Integer |
+| --- | --- | --- |
+| 0 | number | true |
+| 5 | number | true |
+| NaN | number | false |
+| NaN | number | false |
+| 0 | number | false |
+| NaN | number | false |
+| 1 | number | true |
+| 0 | number | true |
+
+### value to Boolean Conversion
+
+- Before Conversion
+
+| Value | Type |
+| --- | --- |
+| "hello" | string |
+| "" | string |
+| 1 | number |
+| false | number |
+
+ - After Conversion
+
+| Value | Type |
+| --- | --- |
+| true | boolean |
+| false | boolean |
+| true | boolean |
+| false | boolean |
+
+### value to String Conversion
+
+- Before Conversion
+
+| Value | Type |
+| --- | --- |
+| 1 | number |
+
+ - After Conversion
+
+| Value | Type |
+| --- | --- |
+| 1 | string |
