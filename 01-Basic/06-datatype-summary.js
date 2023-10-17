@@ -1,6 +1,6 @@
 /*
 * In Javascript, there are only 2 type(category) of datatypes.
-# Primitive DataType (7 Types)
+# Primitive DataType (7 Types) (That are store in Stack)
     1. String
     2. Number (100, 100.5)
     3. Boolean (let loggedIn = true || false)
@@ -8,7 +8,7 @@
     5. undefined
     6. Symbol (let userId = Symbol('123'))
     7. BigInt
-# Non-Primitive DataType (Reference Type: 3 Types)
+# Non-Primitive DataType (Reference Type: 3 Types) (That are store in Heap)
     1. Array
     2. Object
     3. function
@@ -19,16 +19,16 @@
 
 // Reference DataType Example
 // Array
-const chiranjeevi = ['Aswattama','Bali','Ved Vyas','Hanuman','Vibhishan','Kripacharya','Parshuram','Markandey'];
+// const chiranjeevi = ['Aswattama','Bali','Ved Vyas','Hanuman','Vibhishan','Kripacharya','Parshuram','Markandey'];
 
 // Object
-let obj = {
-    username : 'Chiranjeev',
-    age : 22
-}
+// let obj = {
+//     username : 'Chiranjeev',
+//     age : 22
+// }
 
 // function
-let fun = function() {
-    console.log('Namaste! JavaScript');
-}
-fun();
+// let fun = function() {
+//     console.log('Namaste! JavaScript');
+// }
+// fun();
