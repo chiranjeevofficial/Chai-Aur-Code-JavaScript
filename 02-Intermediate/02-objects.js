@@ -79,3 +79,15 @@ let obj3 = Object.assign({},obj1,obj2,obj4);
 // console.log(Object.values(instagram));
 // console.log(Object.entries(instagram));
 // console.log(regularUser.hasOwnProperty('email'));
+
+// ============================ Intermediate Level Object ============================
+let course = {
+    name : "JS Hindi",
+    price : 999,
+    instructure : "Hitesh Chaudhary"
+}
+
+// Object.propertyName //is the long way to access object-property
+const {instructure : ins} = course;
+// console.log(instructure);
+console.log(ins);
