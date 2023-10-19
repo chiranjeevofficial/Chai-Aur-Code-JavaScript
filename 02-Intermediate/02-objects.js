@@ -37,4 +37,45 @@ let JsUser = {
 JsUser.greet = function () {
     console.log(`Namaste! ${this.username}`);
 }
-// console.log(JsUser.greet());
+// console.log(JsUser.greet());      
+
+// ============================ Next Level Object ============================
+// its singleton object
+// let instagram = new Object();
+
+// its non-singleton object
+let instagram = {};
+// console.log(instagram); // its empty object
+
+instagram.id = 124;
+instagram.name = "narayan";
+instagram.isLoggedIn = false;
+// console.log(instagram);
+
+let regularUser = {
+    email : "some@gmail.com",
+    fullName : {
+        userFullName : {
+            firstName : "Chiranjeev",
+            lastName : "Kashyap"
+        }
+    }
+}
+
+// console.log(regularUser.fullName.userFullName.firstName);
+
+let obj1 = {1: "a", 2: "b"};
+let obj2 = {3: "a", 4: "b"};
+
+// let obj3 = {...obj1, ...obj2};
+// let obj3 = Object.assign(obj1,obj2);
+// let obj3 = Object.assign({},obj1,obj2);
+let obj4 = {5: "a", 6: "b"};
+let obj3 = Object.assign({},obj1,obj2,obj4);
+// console.log(obj3);
+
+// console.log(instagram);
+// console.log(Object.keys(instagram));
+// console.log(Object.values(instagram));
+// console.log(Object.entries(instagram));
+// console.log(regularUser.hasOwnProperty('email'));
