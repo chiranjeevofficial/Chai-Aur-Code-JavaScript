@@ -48,7 +48,24 @@ let user = {
 // console.log(addTwo(2,4)); //6
 
 // # if you wan't to return the object, then its neccessary to write expresion in () ("paranthesis")
-let addTwo = (num1, num2) => ({
-    username : "chiranjeev@kk"
-})
-console.log(addTwo(2,1));
+// let addTwo = (num1, num2) => ({
+    // username : "chiranjeev@kk"
+// })
+// console.log(addTwo(2,1));
+
+// ========================== Immediately Invoked Function Expresssion (IIFE)==========================
+// that is used to protect global scope pollution.
+// NOTE : end IIFE function with (;) (semicolon)
+/*
+    // # named IIFE
+    (
+        function functionName(parameters) {
+            // code
+        }
+    )(arguments);
+
+    // # unnamed IIFE
+    ((parameters) => {
+            // code
+    })(arguments);
+*/
