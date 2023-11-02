@@ -50,3 +50,42 @@
 // }
 
 //  ====================== MAP ====================== 
+/*
+-> Map objects are collections of key-value pairs.
+-> A key in the Map may only occur once; it is unique in the Map's collection.
+let map = new Map();
+*/
+// let stateCode = new Map();
+// stateCode.set("UK" , "Uttara Khand");
+// stateCode.set("UK" , "Uttara Khand");
+// stateCode.set("UP" , "Uttar Pardesh");
+// stateCode.set("MP" , "Madhya Pardesh");
+// stateCode.set("MP" , "Madhya Pardesh");
+// console.log(stateCode);
+
+// for (const key of stateCode) { // its return the array of each set
+//     console.log(key);
+// }
+
+// for map de-structuring
+// for (const [key , value] of stateCode) {
+    // console.log(`${key} -> ${value}`);
+// }
+// Note:: MAP are itteratable, but object not because object have different algo to itterate.
+
+// const lang = {
+//     js : "JavaScript",
+//     py : "python",
+//     jsx : "react",
+//     cpp : "c++"
+// }
+
+// for (const key in lang) {
+//     console.log(`${key} shortcut is for ${lang[key]}`);
+// }
+
+const lang = ["c","c++","java","python","javascript"];
+for (const i in lang) {
+    console.log(lang[i]);
+}
+// remember that, we you teach someone from scratch then tell her array index like a key for array value.
